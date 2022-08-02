@@ -1,0 +1,11 @@
+package bank;
+
+import java.sql.SQLException;
+
+public interface BankDao {
+
+//	public void info() throws ClassNotFoundException, SQLException ;
+	public void insertBankTable(Bank b2) throws ClassNotFoundException, SQLException;
+	public void insertCustomerTable(Customer c) throws ClassNotFoundException, SQLException;
+	
+}

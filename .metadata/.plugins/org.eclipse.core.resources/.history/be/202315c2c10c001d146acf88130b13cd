@@ -1,0 +1,7 @@
+package com.chainsys.abstraction;
+
+public class Manager extends Member {
+	public String department;
+	
+	
+}

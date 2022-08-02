@@ -1,0 +1,94 @@
+package bank;
+
+import java.sql.Date;
+import java.sql.SQLException;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class BankTest {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+	
+		Bank b=new Bank();
+		Customer c=new Customer();
+		BankImpl bi=new BankImpl();
+		
+		
+		Scanner in=new Scanner(System.in);
+		System.out.println("Please enter Bank details:");
+		System.out.println("*************************************");
+		System.out.println("Enter Branch name");
+		String bname=in.nextLine();
+		System.out.println("Enter Branch Id");
+		String bid=in.next();
+		System.out.println("Enter Branch location");
+		String bcity=in.next();
+		
+		b.setBname(bname);
+		b.setBid(bid);
+		b.setBcity(bcity);
+		
+		System.out.println("*************************************");
+		System.out.println("Please enter Customer Details");
+		System.out.println("Enter Customer Name");
+		String cname=in.next();
+		System.out.println("Enter Branch Id");
+		String branchId=in.next();
+		System.out.println("Enter Customer Id");
+		String cid=in.next();
+		System.out.println("Enter Customer City");
+		String ccity=in.next();
+		System.out.println("Enter Mobile No");
+		String mobileNo=in.next();
+		System.out.println("Enter DOB");
+		String dob=in.next();
+		
+		LocalDate valueDate = LocalDate.parse(dob);
+        Date loc = Date.valueOf(valueDate);
+		c.setCname(cname);
+		c.setBranchId(branchId);
+		c.setCid(cid);
+		c.setCcity(ccity);
+		c.setMobileNo(mobileNo);
+		c.setDob(loc);
+		
+//		bi.info(b);
+		
+		bi.insertBankTable(b);
+		bi.insertCustomerTable(c);
+		
+//		ArrayList<Bank> data = new ArrayList<Bank>(); 
+//		data = (ArrayList<Bank>) bi.displayInfo();
+//		for(int i=0; i<data.size(); i++) {
+//			System.out.println("Name :" + data.get(i).getBname());
+//			System.out.println("Branch Id :" + data.get(i).getBid());
+//			System.out.println("Branch City :" + data.get(i).getBcity());
+//			
+//		}
+//		
+//		
+//		ArrayList<Customer> data1 = new ArrayList<Customer>(); 
+//		data1 = (ArrayList<Customer>) bi.customerDisplayInfo();
+//		for(int i=0; i<data1.size(); i++) {
+//			System.out.println("Customer Name :" + data1.get(i).getCname());
+//			System.out.println("Branch Id :" + data1.get(i).getBranchId());
+//			System.out.println("Customer Id :" + data1.get(i).getCid());
+//			System.out.println("Customer City :" + data1.get(i).getCcity());
+//			System.out.println("Customer Mobile No :" + data1.get(i).getMobileNo());
+//			System.out.println("Customer DOB :" + data1.get(i).getDob());
+//			
+//		}
+		
+		
+		bi.joinImpl();
+		
+		
+		
+			
+		
+		
+	}
+
+	}
+

@@ -1,0 +1,16 @@
+package com.chainsys.collection;
+
+import java.util.PriorityQueue;
+
+public class CollectionsQueue {
+
+	public static void main(String[] args) {
+		PriorityQueue pq=new PriorityQueue();
+		
+		pq.add(20);
+		pq.peek();
+		pq.poll();
+		
+	}
+
+}

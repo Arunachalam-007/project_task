@@ -1,0 +1,6 @@
+package com.chainsys.collection;
+
+public class User {
+
+	public User(String name,long mobileNo)
+}

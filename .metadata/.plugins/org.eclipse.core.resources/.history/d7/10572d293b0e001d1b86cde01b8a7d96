@@ -1,0 +1,14 @@
+package com.chainsys.collection;
+
+import java.util.Stack;
+
+public class CollectionStack {
+
+	public static void main(String[] args) {
+		Stack s=new Stack();
+		s.add(75849);
+		s.add(543);
+
+	}
+
+}

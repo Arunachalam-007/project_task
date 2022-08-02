@@ -1,0 +1,8 @@
+package bank;
+
+public interface BankDao {
+
+	public void info();
+	
+	public void insertTable();
+}

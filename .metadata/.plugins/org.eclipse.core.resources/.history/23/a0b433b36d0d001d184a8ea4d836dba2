@@ -1,0 +1,12 @@
+package inheritance_asmt;
+
+public class TodoInheritanceManager extends TodoInheritanceChennai {
+
+	int hr=super.hours;
+	boolean permissionLeave=true;
+	
+	public void assignTask(int hr,boolean permissionLeave) {
+		super.assignTask();
+	}
+	
+}

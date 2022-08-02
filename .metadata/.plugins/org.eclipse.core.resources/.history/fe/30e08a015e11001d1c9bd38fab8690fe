@@ -1,0 +1,5 @@
+package asmt.primitive;
+
+public class OverridingChild {
+
+}

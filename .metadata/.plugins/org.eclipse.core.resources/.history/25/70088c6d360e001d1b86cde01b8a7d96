@@ -1,0 +1,50 @@
+package com.chainsys.exceptions;
+
+import java.util.Scanner;
+
+public class UserDefinedExceptions extends Exception{
+
+	String name;
+	int marks;
+	public UserDefinedExceptions(String name,int marks) {
+		this.name=name;
+		this.marks=marks;
+	}
+	public void info() {
+		
+		
+		Scanner in=new Scanner(System.in);
+		System.out.println("Enter name");
+		name=in.next();
+		
+		System.out.println("Enter marks");
+		marks=in.nextInt();
+		
+//		for(int i=0;i<5;i++) {
+//			System.out.println("Enter marks");
+//			marks[i]=in.nextInt();
+//		}
+		
+		try {
+		
+			if(marks<35) {
+				throw new UserDefinedExceptions("Arun",10) ;
+			}
+		
+		}
+		catch(UserDefinedExceptions ex) {
+			ex.printStackTrace();
+			
+		}
+	}
+	public static void main(String[] args) {
+		
+//		UserDefinedExceptions ude=new UserDefinedExceptions();
+		info();
+		
+		
+		
+
+	}
+
+}

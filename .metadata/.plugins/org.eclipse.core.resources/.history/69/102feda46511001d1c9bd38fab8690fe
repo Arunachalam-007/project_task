@@ -1,0 +1,15 @@
+package asmt.primitive;
+
+public class CustomException {
+
+	public static void main(String[] args) {
+		String name;
+		int marks;
+		public UserDefinedExceptions(String name,int marks) {
+			this.name=name;
+			this.marks=marks;
+		}
+
+	}
+
+}

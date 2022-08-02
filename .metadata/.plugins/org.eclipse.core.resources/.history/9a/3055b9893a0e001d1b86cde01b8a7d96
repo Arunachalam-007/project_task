@@ -1,0 +1,12 @@
+package com.chainsys.collection;
+
+import java.util.Set;
+
+public class CollectionsSet {
+
+	public static void main(String[] args) {
+		Set s=new Set();
+		
+	}
+
+}

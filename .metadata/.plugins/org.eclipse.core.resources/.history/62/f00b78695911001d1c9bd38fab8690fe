@@ -1,0 +1,17 @@
+package asmt.primitive;
+
+public class InterfaceAsmt implements Interface1,Interface2{
+
+	
+	
+	//Interface : Interface can have abstract methods and variables.It cannot have a method body.It is 
+	//used to achieve abstraction and multiple inheritance.
+	
+	//A class can implement more than one interface at a time.
+	
+	public static void main(String args[]) {
+		
+	}
+	
+	
+}

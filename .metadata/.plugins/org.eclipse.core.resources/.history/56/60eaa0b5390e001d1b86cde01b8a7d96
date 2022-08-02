@@ -1,0 +1,12 @@
+package com.chainsys.collection;
+
+import java.util.Vector;
+
+public class CollectionsVector {
+
+	public static void main(String[] args) {
+
+		Vector v=new Vector();
+	}
+
+}

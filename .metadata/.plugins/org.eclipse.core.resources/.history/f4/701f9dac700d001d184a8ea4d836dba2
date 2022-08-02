@@ -1,0 +1,20 @@
+package inheritance_asmt;
+
+public class TodoInheritanceChennai {
+	public int hours=8;
+	public boolean permissionForLeave=true;
+	public void assignTask(int hr,boolean pfl) {
+		if((hours>=8)&&(!permissionForLeave)) {
+			System.out.println("U should Complete the tasks which are already assigned");
+		}
+		else {
+			System.out.println("u shouldn't fill the timesheet ");
+			
+			System.out.println();
+			System.out.println("****************************");
+		}
+		
+		
+	}
+
+}

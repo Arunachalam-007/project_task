@@ -1,0 +1,18 @@
+package com.chainsys.collection;
+
+import java.util.PriorityQueue;
+
+import java.util.Vector;
+
+public class CollectionsVector {
+
+	public static void main(String[] args) {
+
+		PriorityQueue q=new Queue();
+		Vector v=new Vector();
+		v.add(20);
+		v.add(57);
+		
+	}
+
+}

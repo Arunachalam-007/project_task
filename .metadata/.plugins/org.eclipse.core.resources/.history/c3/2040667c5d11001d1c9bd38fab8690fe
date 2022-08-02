@@ -1,0 +1,14 @@
+package asmt.primitive;
+
+public class Polymorphism {
+
+	public void calc(int a,int b) {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

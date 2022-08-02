@@ -1,0 +1,14 @@
+package asmt.primitive;
+
+public class Polymorphism {
+
+	public static void main(String[] args) {
+		
+		//Two types of polymorphism
+		
+		//1.Overloading
+		//2.Overriding
+
+	}
+
+}

@@ -1,0 +1,33 @@
+package inheritance_asmt;
+
+import java.util.Scanner;
+
+import abstract_asmt.TodoLogic;
+
+public class TodoInheritanceTest {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		System.out.println("Enter name");
+		String name=in.next();
+		TodoLogic tl=new TodoLogic();
+		tl.nameLogic(name);	
+		
+		System.out.println("Enter user name");
+		String userName=in.next();
+		tl.userNameLogic(userName);
+		
+		System.out.println("Enter password");
+		String password=in.next();
+		tl.passwordLogic(password);
+		
+		int hours=8;
+		boolean permissionForLeave=false;
+		
+		TodoInheritanceChennai tic=new TodoInheritanceChennai();
+		TodoInheritanceMadurai tim=new TodoInheritanceMadurai();
+		
+		tic.assignTask(hours,permissionForLeave);
+		tim.process();
+}
+}

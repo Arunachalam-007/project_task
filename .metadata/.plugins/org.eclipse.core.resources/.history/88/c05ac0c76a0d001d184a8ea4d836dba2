@@ -1,0 +1,10 @@
+package inheritance_asmt;
+
+public class TodoInheritanceChennai {
+	public int hours;
+	public String permissionForLeave;
+	public void assignTask() {
+		
+	}
+
+}

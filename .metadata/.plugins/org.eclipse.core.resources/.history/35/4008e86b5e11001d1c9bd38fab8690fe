@@ -1,0 +1,20 @@
+package asmt.primitive;
+
+public class PolymorphismTest {
+
+	public static void main(String[] args) {
+		Polymorphism p=new Polymorphism();
+		p.calc(10,20, 30);
+		p.calc(5, 10);
+		
+		
+		
+		Overriding o=new Overriding();
+		o.calc();
+	}
+	
+	
+	
+	
+
+}

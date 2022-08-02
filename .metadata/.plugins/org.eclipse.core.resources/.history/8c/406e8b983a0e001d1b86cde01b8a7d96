@@ -1,0 +1,12 @@
+package com.chainsys.collection;
+
+import java.util.HashSet;
+
+public class CollectionsSet {
+
+	public static void main(String[] args) {
+		HashSet hs=new HashSet();
+		
+	}
+
+}

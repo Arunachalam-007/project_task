@@ -1,0 +1,9 @@
+package asmt.primitive;
+
+public class InterfaceAsmt {
+
+	
+	
+	//Interface : Interface can have abstract methods and variables.It cannot have a method body.It is 
+	//used to achieve abstraction and multiple inheritance.
+}

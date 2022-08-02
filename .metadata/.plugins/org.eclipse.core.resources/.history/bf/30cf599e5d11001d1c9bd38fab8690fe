@@ -1,0 +1,20 @@
+package asmt.primitive;
+
+public class Polymorphism {
+
+	public void calc(int a,int b) {
+		int result=a*b;
+		System.out.println(result);
+	}
+	
+	public void calc(int a,int b,int c) {
+		int result=a+b+c;
+		
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

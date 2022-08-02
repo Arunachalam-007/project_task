@@ -1,0 +1,10 @@
+package inheritance_asmt;
+
+public class TodoInheritanceTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package bank;
+
+import java.sql.Date;
+
+public class Customer {
+
+	private String cname;
+	private String branchId;
+	private String cid;
+	private String ccity;
+	private String mobileNo;
+	private Date dob;
+}

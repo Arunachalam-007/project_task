@@ -1,0 +1,9 @@
+package com.chainsys.abstraction;
+
+public class Employee extends Member {
+	public Employee(String n1,int a,long p,String addr,int sal) {
+		
+	}
+	public String specialization;
+
+}

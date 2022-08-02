@@ -1,0 +1,9 @@
+package com.chainsys.abstraction;
+
+public class Member {
+	public String name;
+	public int age;
+	public long phoneNumber;
+	
+
+}

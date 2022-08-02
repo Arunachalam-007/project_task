@@ -1,0 +1,18 @@
+package asmt.primitive;
+
+public class Primitive {
+
+	public static void main(String[] args) {
+		
+		System.out.println("int");
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+
+	}
+
+}

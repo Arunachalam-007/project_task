@@ -1,0 +1,16 @@
+package com.chainsys.collection;
+
+import java.util.ArrayList;
+
+public class Collections {
+	
+	public void display() {
+		ArrayList al=new ArrayList();
+		
+		al.add("Arunachalam");
+		al.add(2999);
+		al.add(true);
+		al.add(20.90);
+	}
+
+}

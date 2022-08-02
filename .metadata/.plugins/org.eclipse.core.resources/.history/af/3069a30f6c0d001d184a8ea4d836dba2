@@ -1,0 +1,24 @@
+package inheritance_asmt;
+
+import java.util.Scanner;
+
+public class TodoInheritanceMadurai {
+
+	public void todoApp() {
+		Scanner in=new Scanner(System.in);
+		System.out.println("Enter No of Tasks");
+	     int n = in.nextInt();
+	     String arr[] = new String[n];
+	     for(int j=0;j<n;j++)
+	     {
+	         System.out.println("Enter the Task");
+	         arr[j]=in.next();
+	     }
+	     System.out.println("ToDo are :");
+	     
+	     for (String values : arr) {
+	         System.out.println(values);
+	     }
+		
+	}
+}
