@@ -1,8 +1,0 @@
-package day7_asmt;
-
-public class InheritanceExample {
-	private void displayInfo() {
-		System.out.println("This is parent class");
-	}
-
-}

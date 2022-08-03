@@ -4,6 +4,7 @@ import java.sql.Date;
 
 public class Customer {
 
+	//Data members
 	private String cname;
 	private String branchId;
 	private String cid;

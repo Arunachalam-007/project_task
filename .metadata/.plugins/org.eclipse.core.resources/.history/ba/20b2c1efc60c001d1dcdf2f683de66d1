@@ -1,6 +1,0 @@
-package day7_asmt;
-
-public class Square extends Rectangle {
-	
-
-}

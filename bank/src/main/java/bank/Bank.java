@@ -1,7 +1,7 @@
 package bank;
 
 public class Bank {
-	
+	//Data Members
 	private String bname;
 	private String bid;
 	private String bcity;

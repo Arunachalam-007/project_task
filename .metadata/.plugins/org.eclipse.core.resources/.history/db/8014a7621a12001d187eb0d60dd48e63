@@ -1,8 +1,0 @@
-package bank;
-
-public interface BankDao {
-
-	public void info();
-	
-	
-}

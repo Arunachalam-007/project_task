@@ -1,9 +1,0 @@
-package bank;
-
-public class Bank {
-	
-	private String name;
-	private int accNo;
-	private String location;
-
-}

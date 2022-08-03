@@ -11,13 +11,17 @@ import java.util.ArrayList;
 
 public class BankImpl implements BankDao{
 
+	//Adding Bank Information
 	public void addBank(Bank b2) throws ClassNotFoundException, SQLException {
 		Connection con=BankConnection.getConnection();
 		
+		//Inserting Information into BankBnfo Table
 		String query2="insert into bankBnfo(bname,bid,bcity)values(?,?,?)";
 		
 		PreparedStatement stmt1=con.prepareStatement(query2);
 		
+		
+		//Set the value for the table
 		stmt1.setString(1,b2.getBname());
 		stmt1.setString(2, b2.getBid());
 		stmt1.setString(3, b2.getBcity());
@@ -26,12 +30,16 @@ public class BankImpl implements BankDao{
 		System.out.println(ex);
 	}
 	
+	//Adding Customer Information
 	public void addCustomer(Customer c) throws ClassNotFoundException, SQLException {
 		Connection con=BankConnection.getConnection();
 		
+		
+		//Query to insert the values into customerInfo table
 		String query3="insert into customerInfo(cname,branchId,cid,ccity,mobileNo,dob)values(?,?,?,?,?,?)";		
 		PreparedStatement stmt2=con.prepareStatement(query3);
-			
+		
+		//Set the values
 		stmt2.setString(1, c.getCname());
 		stmt2.setString(2, c.getBranchId());
 		stmt2.setString(3, c.getCid());
@@ -39,11 +47,13 @@ public class BankImpl implements BankDao{
 		stmt2.setString(5, c.getMobileNo());
 		stmt2.setDate(6, c.getDob());
 	
+		//Display the count,how many rows affected
 		int ex=stmt2.executeUpdate();
 		System.out.println(ex+"row/s affected");
 		
 	}
 	
+	//Update Operation
 	public void updateInfo(Customer cust) throws ClassNotFoundException,SQLException {
 		Connection con=BankConnection.getConnection();
 		String squery2="update customerInfo set cname='md.ashiq' where cid='dxj298'";
@@ -52,6 +62,7 @@ public class BankImpl implements BankDao{
 		System.out.println(i);	
 		
 	}
+	//Delete Operation
 	public void deleteInfo(Customer cust) throws ClassNotFoundException, SQLException {
 		Connection con=BankConnection.getConnection();
 		String squery1="delete from customerInfo where cid='shh287'";
@@ -59,6 +70,7 @@ public class BankImpl implements BankDao{
 		int i=stmt.executeUpdate();
 		System.out.println(i);	
 	}
+	//Read Operation
 	public void readInfo(Customer stud) throws ClassNotFoundException,SQLException  {
 		Connection con=BankConnection.getConnection();
 		String squery3="select cname from customerInfo where branchId='wei726'";
@@ -69,6 +81,7 @@ public class BankImpl implements BankDao{
 		
 	}
 	
+	//To display the Bank information using Array List
 	public ArrayList<Bank> displayInfo() {
 			
 		
@@ -103,7 +116,7 @@ public class BankImpl implements BankDao{
 		
 	}
 	
-	
+	//To display the Customer Information using Array list
 	public ArrayList<Customer> customerDisplayInfo() {
 			
 		Connection con;
@@ -144,6 +157,7 @@ public class BankImpl implements BankDao{
 		
 	}
 	
+	//Join operation
 	public void joinImpl(String query10) throws ClassNotFoundException, SQLException {
 		Connection con=BankConnection.getConnection();
 		

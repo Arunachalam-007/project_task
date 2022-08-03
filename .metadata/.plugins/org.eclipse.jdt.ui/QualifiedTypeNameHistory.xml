@@ -40,8 +40,6 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="bank.Bank"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="bank.BankConnection"/>
     <fullyQualifiedTypeName name="com.chainsys.abstraction.AbstractConcept"/>
     <fullyQualifiedTypeName name="asmt.primitive.Interface2"/>
     <fullyQualifiedTypeName name="asmt.primitive.Interface1"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="bank.Customer"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="bank.BankDao"/>
+    <fullyQualifiedTypeName name="bank.BankConnection"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

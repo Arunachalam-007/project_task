@@ -10,11 +10,12 @@ public class BankTest {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 	
+		//Creating instance object
 		Bank b=new Bank();
 		Customer c=new Customer();
 		BankImpl bi=new BankImpl();
 		
-		
+		//Getting Bank info from users
 		Scanner in=new Scanner(System.in);
 		System.out.println("Please enter Bank details:");
 		System.out.println("*************************************");
@@ -29,6 +30,7 @@ public class BankTest {
 		b.setBid(bid);
 		b.setBcity(bcity);
 		
+		//Getting Customer Details from users
 		System.out.println("*************************************");
 		System.out.println("Please enter Customer Details");
 		System.out.println("Enter Customer Name");
@@ -59,6 +61,7 @@ public class BankTest {
 		
 		
 	
+		//Display Option selection using switch case
 		System.out.println("Enter option \n 1 for Inner Join \n 2 for Left Join \n 3 for Right Join \n 4 for Bank Info \n 5 for Customer Info \n 6 for Update Customer \n 7 for Delete Customer \n 8 for Read Customer Info \n 9 for Exit");
 		int x=in.nextInt();
 		switch(x){

@@ -1,8 +1,0 @@
-package day7_asmt;
-
-public class Snippet {
-	public static void main(String[] args) {
-		e.specDisplay("Trainee Pgmer");
-	}
-}
-
