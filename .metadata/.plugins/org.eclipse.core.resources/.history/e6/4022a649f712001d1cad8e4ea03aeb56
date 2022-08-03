@@ -1,0 +1,66 @@
+package bank;
+
+public class BankValidation {
+	public String bankNameval(String bname) {
+		
+		String expression = "^[a-zA-Z\\s]+";
+		
+		if((bname.trim().length()>3)&&(bname.matches(expression))) {
+			System.out.println("Bank Name is valid");
+			return bname;
+		}
+		else {
+			System.out.println("Invalid bank name");
+			System.exit(1);	
+			
+		}
+		return "plz enter valid bank name";
+		
+	}
+	
+	public String branchIdval(String bid) {
+		String expression = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}";
+		
+		if((bid.trim().length()>3)&&(bid.matches(expression))) {
+			System.out.println("Branch id is valid");
+			return bid;
+		}
+		else {
+			System.out.println("Invalid bankId");
+			System.exit(1);	
+			
+		}
+		return "plz enter valid bank Id";
+		
+	}
+	public String branchLocVal(String bcity) {
+		String expression = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}";
+		
+		if((bcity.trim().length()>3)&&(bcity.matches(expression))) {
+			System.out.println("Branch location is valid");
+			return bcity;
+		}
+		else {
+			System.out.println("Invalid bank location");
+			System.exit(1);	
+			
+		}
+		return "plz enter valid bank location";
+		
+	}
+	public String custNameVal(String cname) {
+String expression = "^[a-zA-Z\\s]+";
+		
+		if((cname.trim().length()>3)&&(cname.matches(expression))) {
+			System.out.println("Customer Name is valid");
+			return cname;
+		}
+		else {
+			System.out.println("Invalid Customer name");
+			System.exit(1);	
+			
+		}
+		return "plz enter valid Customer name";
+	}
+
+}

@@ -1,0 +1,33 @@
+package file_asmt;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileConcept {
+
+	public static void main(String[] args) throws IOException {
+		
+		try {
+		File f=new File("sample1.txt");
+		
+		
+		if(f.exists()) {
+			System.out.println("File exists");
+		}
+		else {
+			f.createNewFile();
+			System.out.println("File created "+f.getAbsolutePath());
+		}
+		
+		FileWriter fw=new FileWriter(f);
+		
+		}
+		catch(Exception ex) {
+			ex.printStackTrace();
+		}
+		
+	}
+	
+
+}

@@ -14,6 +14,7 @@ public class BankTest {
 		Bank b=new Bank();
 		Customer c=new Customer();
 		BankImpl bi=new BankImpl();
+		BankValidation bv=new BankValidation();
 		
 		//Getting Bank info from users
 		Scanner in=new Scanner(System.in);
@@ -21,38 +22,55 @@ public class BankTest {
 		System.out.println("*************************************");
 		System.out.println("Enter Branch name");
 		String bname=in.nextLine();
+		String bnameValidations=bv.bankNameVal(bname);
+		b.setBname(bnameValidations);
+		
+		
 		System.out.println("Enter Branch Id");
 		String bid=in.next();
+		String bidValidations=bv.branchIdVal(bid);
+		b.setBid(bidValidations);
+		
 		System.out.println("Enter Branch location");
 		String bcity=in.next();
+		String bcityValidations=bv.branchLocVal(bcity);
+		b.setBcity(bcityValidations);
 		
-		b.setBname(bname);
-		b.setBid(bid);
-		b.setBcity(bcity);
+		
 		
 		//Getting Customer Details from users
 		System.out.println("*************************************");
 		System.out.println("Please enter Customer Details");
 		System.out.println("Enter Customer Name");
 		String cname=in.next();
+		String custNameValidations=bv.custNameVal(cname);
+		c.setCname(custNameValidations);
+		
 		System.out.println("Enter Branch Id");
 		String branchId=in.next();
+		String custBidValidations=bv.customerBranchIdVal(branchId);
+		c.setBranchId(custBidValidations);
+		
 		System.out.println("Enter Customer Id");
 		String cid=in.next();
+		String custidValidations=bv.customerIdVal(cid);
+		c.setCid(custidValidations);
+		
 		System.out.println("Enter Customer City");
 		String ccity=in.next();
+		String custCityValidations=bv.custLocVal(ccity);
+		c.setCcity(custCityValidations);
+		
 		System.out.println("Enter Mobile No");
 		String mobileNo=in.next();
+		String custMobNoValidations=bv.mobileNoVal(mobileNo);
+		c.setMobileNo(custMobNoValidations);
+		
 		System.out.println("Enter DOB");
 		String dob=in.next();
 		
 		LocalDate valueDate = LocalDate.parse(dob);
         Date loc = Date.valueOf(valueDate);
-		c.setCname(cname);
-		c.setBranchId(branchId);
-		c.setCid(cid);
-		c.setCcity(ccity);
-		c.setMobileNo(mobileNo);
 		c.setDob(loc);
 		
 		

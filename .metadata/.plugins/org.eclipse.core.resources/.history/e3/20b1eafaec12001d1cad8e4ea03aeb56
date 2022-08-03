@@ -1,0 +1,24 @@
+package file_asmt;
+
+import java.io.File;
+
+public class FileConcept {
+
+	public static void main(String[] args) {
+		File f=new File("sample.txt");
+		
+		
+		
+		if(f.exists()) {
+			System.out.println("File exists");
+		}
+		
+	}
+	public void readOprn() {
+		
+	}
+	public void writeOprn() {
+		
+	}
+
+}

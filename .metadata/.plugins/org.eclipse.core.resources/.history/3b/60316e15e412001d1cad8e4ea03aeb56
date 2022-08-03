@@ -1,0 +1,23 @@
+package bank;
+
+public class BankValidation {
+	public String bankNameval(String bname) {
+		
+		String expression = "^[a-zA-Z\\s]+";
+		
+		if((bname.trim().length()>3)&&&&(bname.matches(expression))) {
+			System.out.println("Name is valid");
+			return bname;
+		}
+		else {
+			System.out.println("Invalid name");
+			System.exit(1);	
+			
+		}
+		return "plz enter valid name" ;
+			
+		return banme;
+		
+	}
+
+}

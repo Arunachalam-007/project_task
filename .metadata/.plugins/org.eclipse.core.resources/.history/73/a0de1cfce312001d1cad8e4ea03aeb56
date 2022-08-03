@@ -1,0 +1,9 @@
+package bank;
+
+public class BankValidation {
+	public String bankNameval(String banme) {
+		return banme;
+		
+	}
+
+}

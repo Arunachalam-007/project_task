@@ -1,0 +1,37 @@
+package bank;
+
+public class BankValidation {
+	public String bankNameval(String bname) {
+		
+		String expression = "^[a-zA-Z\\s]+";
+		
+		if((bname.trim().length()>3)&&(bname.matches(expression))) {
+			System.out.println("Name is valid");
+			return bname;
+		}
+		else {
+			System.out.println("Invalid bank name");
+			System.exit(1);	
+			
+		}
+		return "plz enter valid bank name";
+		
+	}
+	
+	public String branchIdval(String bid) {
+		String expression = "^[a-zA-Z\\s]+";
+		
+		if((bid.trim().length()>3)&&(bid.matches(expression))) {
+			System.out.println("Name is valid");
+			return bid;
+		}
+		else {
+			System.out.println("Invalid bankId");
+			System.exit(1);	
+			
+		}
+		return "plz enter valid bank Id";
+		
+	}
+
+}

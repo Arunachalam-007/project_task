@@ -1,0 +1,11 @@
+package bank;
+
+public class BankValidation {
+	public String bankNameval(String banme) {
+		
+		String expression = "^[a-zA-Z\\s]+";
+		return banme;
+		
+	}
+
+}

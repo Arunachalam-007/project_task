@@ -1,0 +1,15 @@
+package file_asmt;
+
+public class fileBuffer {
+
+	public static void main(String[] args) {
+
+	}
+	public static void bufferWriterOprn() {
+		File f=new File("sample.txt")
+	}
+	public static void bufferReaderOprn() {
+		
+	}
+
+}
