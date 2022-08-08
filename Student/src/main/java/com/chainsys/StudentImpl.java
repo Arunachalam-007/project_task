@@ -1,5 +1,9 @@
 package com.chainsys;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.sql.*;
 
 import java.util.ArrayDeque;
@@ -19,11 +23,13 @@ public class StudentImpl implements StudentIntface {
 			Connection con=StudentConnection.getConnection();
 			
 //			String squery5="create sequence id_valss start with 1 increment by 1 minvalue 0 maxvalue 100 cycle";
-			createTable(stud);
-			updateTable(stud);
-			deleteTable(stud);
-			readTable(stud);
-			dataFetching(stud);
+//			createTable(stud);
+//			updateTable(stud);
+//			deleteTable(stud);
+//			readTable(stud);
+//			dataFetching(stud);
+			imgDisplay(stud);
+			
 			
 			
 			
@@ -117,6 +123,24 @@ public class StudentImpl implements StudentIntface {
 //		System.out.println(i);	
 	}
 	
+	public void imgDisplay(Student stud) throws FileNotFoundException, ClassNotFoundException, SQLException {
+		Connection con=StudentConnection.getConnection();
+		String filePath ="E:/imgFolder/nature.jpeg";
+		InputStream inputStream = new FileInputStream(new File(filePath));
+		String sql = "insert into student(name,rollNo,grade,dateTime,photo)values(?,?,?,?,?)";
+		PreparedStatement stmt = con.prepareStatement(sql);
+		
+		stmt.setString(1, stud.getName());
+		stmt.setInt(2, stud.getRollNo());
+		stmt.setString(3, stud.getGrade());
+		stmt.setDate(4, stud.getDate());
+		
+		stmt.setBlob(5, inputStream);
+		int i=stmt.executeUpdate();
+		System.out.println(i);
+		
+	}
+	
 	public List<Student> displayData() throws ClassNotFoundException, SQLException {
 		
 		
@@ -154,65 +178,6 @@ public class StudentImpl implements StudentIntface {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-//		Student s1=new Student();
-//		//StudentImpl si=new StudentImpl();
-//		Connection con=StudentConnection.getConnection();
-//		String query="select * from student";
-//		PreparedStatement stmt=con.prepareStatement(query);
-//		ResultSet rs = stmt.executeQuery();
-//		ArrayList al=new ArrayList();
-//		
-//		while(rs.next()) {
-//			String name=rs.getString(1);
-//			int rollNo=rs.getInt(2);
-//			String grade=rs.getString(3);
-//			
-//			s1.setName(name);
-//			s1.setGrade(grade);
-//			s1.setRollNo(rollNo);
-//			
-////			
-//			al.add(s1);
-////			al.add(name);
-////			al.add(rollNo);
-////			al.add(grade);
-////			al.add(s1);
-//			
-//			
-//			
-////			Deque d1=new ArrayDeque();
-////			d1.add(s1);
-////			System.out.println(d1);
-////			System.out.println(s1);
-////			System.out.println(s1.getName()+"\t\t"+s1.getGrade()+"\t\t"+s1.getRollNo());
-//			System.out.println(s1);
-//			
-//		}
-//		
-//		
-//		
-//		
-////		List<Student> displayDetails=si.displayData();
-////		System.out.println(displayDetails);
-//		
-////		ArrayList res=al;
-//		
-//		return al;
-//		
-//		
 	}
 	
 	}

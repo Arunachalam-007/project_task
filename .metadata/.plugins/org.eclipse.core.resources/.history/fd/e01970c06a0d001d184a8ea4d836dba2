@@ -1,9 +1,0 @@
-package inheritance_asmt;
-
-public class TodoInheritanceChennai {
-	public int hours;
-	public void assignTask() {
-		
-	}
-
-}

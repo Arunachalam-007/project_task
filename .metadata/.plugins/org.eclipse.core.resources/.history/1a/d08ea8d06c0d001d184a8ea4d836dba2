@@ -1,9 +1,0 @@
-package inheritance_asmt;
-
-public class TodoInheritanceHR extends TodoInheritanceMadurai{
-
-	public int id=super.id;
-	public String location="Chennai";
-	
-	public void process
-}

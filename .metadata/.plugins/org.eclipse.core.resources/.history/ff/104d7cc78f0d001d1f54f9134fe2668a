@@ -1,9 +1,0 @@
-package com.chainsys.collection;
-
-public class Collections {
-	
-	public void display() {
-		ArrayList al=new ArrayList(;)
-	}
-
-}

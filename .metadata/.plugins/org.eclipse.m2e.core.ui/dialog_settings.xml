@@ -50,6 +50,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="AirLineReservation"/>
 			<item value="bank"/>
 			<item value="Student"/>
 			<item value="demo"/>
