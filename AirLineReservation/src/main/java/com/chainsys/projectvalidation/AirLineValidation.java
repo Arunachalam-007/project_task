@@ -1,5 +1,6 @@
 package com.chainsys.projectvalidation;
 
+
 public class AirLineValidation {
 
 	public String pnameVal(String pname) {
@@ -47,7 +48,7 @@ public class AirLineValidation {
 	public String puserNameVal(String pusernName) {
 		String expression = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}";
 
-		if ((pusernName.trim().length() > 3) && (pusernName.matches(expression))) {
+		if ((pusernName.trim().length() > 3) || (pusernName.matches(expression))) {
 			System.out.println("User Name is valid");
 			return pusernName;
 		} else {
