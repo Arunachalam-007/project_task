@@ -42,10 +42,7 @@ public class BookedTicketsTest {
 		default:
 			System.out.println("Please enter valid Option!");
 		}
-		
 			
-			
-//		
 		
 		
 	}

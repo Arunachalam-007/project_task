@@ -70,7 +70,6 @@ public class FlightImpl implements FlightDao {
 				System.out.println("Please enter valid Location");
 			}
 
-
 		} else if (x == 2) {
 			System.out.println("Air India");
 
@@ -162,7 +161,7 @@ public class FlightImpl implements FlightDao {
 		f.setDepartureAirport(departureAirport);
 		f.setDestinationAirport(destinationAirport);
 		f.setPrice(price);
-	
+
 		Connection con = AirLineConnection.getConnection();
 
 		String query = "insert into Flight(flightNumber,departureDate,departureAirport,destinationAirport,price) values(?,?,?,?,?)";
@@ -185,11 +184,9 @@ public class FlightImpl implements FlightDao {
 
 		PreparedStatement ps1 = con1.prepareStatement(query1);
 
-
 		ps1.setString(1, f.getFlightNumber());
 		ps1.setString(2, bt.getBookedPassengerName());
 		ps1.setString(3, bt.getBookedMobile());
-
 
 		int ex1 = ps1.executeUpdate();
 		System.out.println("*************Ticket Booked Successfully*********");
@@ -291,23 +288,27 @@ public class FlightImpl implements FlightDao {
 		f.setDestinationAirport(destinationAirport);
 		f.setPrice(price);
 
-		Connection con = AirLineConnection.getConnection();
+		try {
+			Connection con = AirLineConnection.getConnection();
 
-		String query = "insert into Flight(flightNumber,departureDate,departureAirport,destinationAirport,price) values(?,?,?,?,?)";
+			String query = "insert into Flight(flightNumber,departureDate,departureAirport,destinationAirport,price) values(?,?,?,?,?)";
 
-		PreparedStatement ps = con.prepareStatement(query);
+			PreparedStatement ps = con.prepareStatement(query);
 
-		ps.setString(1, f.getFlightNumber());
-		ps.setDate(2, f.getDepartureDate());
-		ps.setString(3, f.getDepartureAirport());
-		ps.setString(4, f.getDestinationAirport());
-		ps.setInt(5, f.getPrice());
+			ps.setString(1, f.getFlightNumber());
+			ps.setDate(2, f.getDepartureDate());
+			ps.setString(3, f.getDepartureAirport());
+			ps.setString(4, f.getDestinationAirport());
+			ps.setInt(5, f.getPrice());
 
-		int ex = ps.executeUpdate();
+			int ex = ps.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 		// ************************************************************************
 
-
+		try {
 			Connection con1 = AirLineConnection.getConnection();
 
 			String query1 = "insert into bookedTickets(bookedAirLineId,bookedPassengerName,bookedMobile,seatNo) values (?,?,?,seat_val.nextval)";
@@ -318,11 +319,12 @@ public class FlightImpl implements FlightDao {
 			ps1.setString(2, bt1.getBookedPassengerName());
 			ps1.setString(3, bt1.getBookedMobile());
 
-
 			int ex1 = ps1.executeUpdate();
 			System.out.println("*************Ticket Booked Successfully*********");
 
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-
 	}
 
+}

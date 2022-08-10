@@ -1,8 +1,0 @@
-package asmt.primitive;
-
-public class OverridingChild extends Overriding{
-
-	public void calc() {
-		
-	}
-}

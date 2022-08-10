@@ -10,19 +10,21 @@ import com.chainsys.projectdao.BookedTicketDao;
 public class BookedTicketsImpl implements BookedTicketDao {
 
 	public void bookingTicket(BookedTickets bt) throws SQLException, ClassNotFoundException {
-		Connection con = AirLineConnection.getConnection();
 
-		String query = "insert into bookedTickets(bookedAirLineId,bookedPassengerName,bookedMobile,seatNo) values (?,?,?,?)";
+		try {
+			Connection con = AirLineConnection.getConnection();
 
-		PreparedStatement ps = con.prepareStatement(query);
+			String query = "insert into bookedTickets(bookedAirLineId,bookedPassengerName,bookedMobile,seatNo) values (?,?,?,?)";
 
-		ps.setString(2, bt.getBookedPassengerName());
-		ps.setString(3, bt.getBookedMobile());
+			PreparedStatement ps = con.prepareStatement(query);
 
-		
+			ps.setString(2, bt.getBookedPassengerName());
+			ps.setString(3, bt.getBookedMobile());
 
-		int ex = ps.executeUpdate();
+			int ex = ps.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
-
 
 }

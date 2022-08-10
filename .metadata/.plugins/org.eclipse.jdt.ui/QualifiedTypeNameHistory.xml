@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="asmt.primitive.OverridingChild"/>
-    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
-    <fullyQualifiedTypeName name="com.chainsys.StudentConnection"/>
-    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="bank.Customer"/>
-    <fullyQualifiedTypeName name="bank.BankDao"/>
-    <fullyQualifiedTypeName name="bank.BankConnection"/>
-    <fullyQualifiedTypeName name="bank.BankValidation"/>
-    <fullyQualifiedTypeName name="java.io.InputStream"/>
-    <fullyQualifiedTypeName name="java.io.Serializable"/>
-    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.ObjectOutput"/>
-    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
     <fullyQualifiedTypeName name="com.chainsys.serialization.Student"/>
@@ -21,7 +7,6 @@
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.nio.file.Files"/>
@@ -56,8 +41,23 @@
     <fullyQualifiedTypeName name="com.chainsys.projecttest.FlightTest"/>
     <fullyQualifiedTypeName name="com.chainsys.project.BookedTickets"/>
     <fullyQualifiedTypeName name="com.chainsys.projecttest.BookedTicketsTest"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.chainsys.projecttest.CancelledTicketsTest"/>
     <fullyQualifiedTypeName name="com.chainsys.projectimpl.CancelledTicketsImpl"/>
+    <fullyQualifiedTypeName name="com.chainsys.projectdao.CancelledTicketsDao"/>
+    <fullyQualifiedTypeName name="junit.samplejunit"/>
     <fullyQualifiedTypeName name="com.chainsys.projectvalidation.AirLineValidation"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.stream.Stream"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="stream_asmt.Employee"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collector"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="java.util.function.Function"/>
+    <fullyQualifiedTypeName name="stream_asmt.EmployeeImpl"/>
 </qualifiedTypeNameHistroy>
